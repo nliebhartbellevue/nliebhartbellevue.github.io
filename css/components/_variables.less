@@ -1,4 +1,4 @@
-// colour palette 
+// colour palette
 
 @black: #000;
 @dark-grey: #333;
@@ -33,54 +33,61 @@
 @md-grey: #727272;
 @md-light-grey: #b6b6b6;
 
-// background colours 
+// theme colors
+@nl-primary: #673ab7;
+@nl-dark-primary: #512da8;
+@nl-light-primary: #d1c4e9;
+@nl-accent: #e040fb;
+@nl-black: #212121;
+@nl-grey: #727272;
+@nl-light-grey: #b6b6b6;
+
+// background colours
 @primary-background: @white;
-@secondary-background: @off-white;
-@third-background: @md-light-grey;
-@fourth-background: @md-grey;
-@inverse-background: @md-dark-blue;
+@secondary-background: @nl-grey;
+@inverse-background: @nl-black;
 
-// text colours 
-@primary-text: @md-black; 
-@light-text: @md-grey; 
-@loud-text: @md-black;
+// text colours
+@primary-text: @nl-grey;
+@light-text: @nl-light-grey;
+@loud-text: @nl-black;
 @inverse-text: @white;
-@heading-text: @md-dark-blue;
+@heading-text: @nl-black;
 
-// link colours 
-@primary-link-color: @md-blue;
-@primary-link-color-hover: @md-grey;
+// link colours
+@primary-link-color: @nl-primary;
+@primary-link-color-hover: @nl-primary-dark;
 
-// primary border properties 
-@border-color: @md-light-grey;
+// primary border properties
+@border-color: @light-grey;
 @border-size: 1px;
 @border-type: solid;
-@border-focus: @md-blue;
-@secondary-border-color: @md-blue;
+@border-focus: @nl-accent;
 
-// typography 
-@body-copy: "Roboto", helvetica, arial, verdana, sans-serif;
-@heading-copy: "Roboto", helvetica, arial, verdana, sans-serif;
-@heading-copy-bold: "Roboto", helvetica, arial, verdana, sans-serif;
-@base-font-size: 14px;
+// typography
+@body-copy: "Source Sans Pro", "Helvetica Neue", helvetica, arial, verdana,
+  sans-serif;
+@heading-copy: "Source Sans Pro", "Helvetica Neue", helvetica, arial, verdana,
+  sans-serif;
+@base-font-size: 16px; //new
 @font-size: 1em;
-@base-line-height: 1.5; 
+@base-line-height: 1.5;
 
-// layout 
+// layout
 @margin: 1em;
 @padding: 1em;
 
 // MIXINS
 
 // round corners or Border radius
-.round-corners (@radius: 2px) {
+.round-corners (@radius: 5px) {
   -moz-border-radius: @radius;
   -ms-border-radius: @radius;
   border-radius: @radius;
 }
 
 // animation transitions
-.transition (@transition: background .1s linear) {
+.transition (@transition: background 0.1s linear) {
   -moz-transition: @transition;
   -webkit-transition: @transition;
   transition: background @transition;

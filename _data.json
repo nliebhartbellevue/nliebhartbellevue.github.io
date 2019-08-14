@@ -1,5 +1,9 @@
 {
   "index": {
     "pageTitle": "Home"
+  },
+  "project": {
+    "pageTitle": "Project",
+    "layout": "_layout-project"
   }
 }
