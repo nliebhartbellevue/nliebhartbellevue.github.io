@@ -1,0 +1,87 @@
+// colour palette 
+
+@black: #000;
+@dark-grey: #333;
+@grey: #ccc;
+@light-grey: #ebebeb;
+@off-white: #f5f5f5;
+@white: #ffffff;
+
+@blue1: #3498db;
+@blue2: #2980b9;
+@red1: #e74c3c;
+@red2: #c0392b;
+@yellow1: #f1c40f;
+@yellow2: #f39c12;
+@green1: #2ecc71;
+@green2: #27ae60;
+@orange1: #e67e22;
+@orange2: #d35400;
+@aqua1: #1abc9c;
+@aqua2: #16a085;
+@purple1: #9b59b6;
+@purple2: #8e44ad;
+@navy1: #34495e;
+@navy2: #2c3e50;
+
+// material design colors materialpalette.com
+@md-black: #212121;
+@md-dark-blue: #303f9f;
+@md-blue: #3f51b5;
+@md-light-blue: #c5cae9;
+@md-pink: #ff4081;
+@md-grey: #727272;
+@md-light-grey: #b6b6b6;
+
+// background colours 
+@primary-background: @white;
+@secondary-background: @off-white;
+@third-background: @md-light-grey;
+@fourth-background: @md-grey;
+@inverse-background: @md-dark-blue;
+
+// text colours 
+@primary-text: @md-black; 
+@light-text: @md-grey; 
+@loud-text: @md-black;
+@inverse-text: @white;
+@heading-text: @md-dark-blue;
+
+// link colours 
+@primary-link-color: @md-blue;
+@primary-link-color-hover: @md-grey;
+
+// primary border properties 
+@border-color: @md-light-grey;
+@border-size: 1px;
+@border-type: solid;
+@border-focus: @md-blue;
+@secondary-border-color: @md-blue;
+
+// typography 
+@body-copy: "Roboto", helvetica, arial, verdana, sans-serif;
+@heading-copy: "Roboto", helvetica, arial, verdana, sans-serif;
+@heading-copy-bold: "Roboto", helvetica, arial, verdana, sans-serif;
+@base-font-size: 14px;
+@font-size: 1em;
+@base-line-height: 1.5; 
+
+// layout 
+@margin: 1em;
+@padding: 1em;
+
+// MIXINS
+
+// round corners or Border radius
+.round-corners (@radius: 2px) {
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  border-radius: @radius;
+}
+
+// animation transitions
+.transition (@transition: background .1s linear) {
+  -moz-transition: @transition;
+  -webkit-transition: @transition;
+  transition: background @transition;
+}
