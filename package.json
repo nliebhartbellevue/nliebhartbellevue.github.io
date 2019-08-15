@@ -1,0 +1,22 @@
+{
+  "name": "nliebhartbellevue.github.io",
+  "version": "1.0.0",
+  "description": "Personal Portfolio website for Nathaniel Liebhart",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nliebhartbellevue/nliebhartbellevue.github.io.git"
+  },
+  "author": "Nathaniel Liebhart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nliebhartbellevue/nliebhartbellevue.github.io/issues"
+  },
+  "homepage": "https://github.com/nliebhartbellevue/nliebhartbellevue.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
