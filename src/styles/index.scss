@@ -40,9 +40,20 @@ img {
   height: 70px;
   color: #fff;
   text-transform: uppercase;
+  padding-left: 1rem;
 }
 
 // Main nav
+.nav-color {
+  background-color: $dark-color;
+  opacity: 0.8;
+  border: 2px solid $light-color;
+  border-radius: 12px;
+}
+.sticky {
+  position: fixed;
+  width: 80%;
+}
 #main-nav {
   display: flex;
   justify-content: space-between;
@@ -78,7 +89,7 @@ img {
 #header {
   // Header Home
   &-home {
-    background: $bg-image no-repeat center right / cover;
+    background: $bg-image no-repeat center top / cover;
     height: 100vh;
     color: #fff;
 
