@@ -1,3 +1,4 @@
+require("dotenv").config();
 const Path = require("path");
 const Webpack = require("webpack");
 const merge = require("webpack-merge");
@@ -14,7 +15,9 @@ module.exports = merge(common, {
   },
   plugins: [
     new Webpack.DefinePlugin({
-      "process.env.NODE_ENV": JSON.stringify("development")
+      NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      GITHUB_CLIENT_ID: JSON.stringify(process.env.GITHUB_CLIENT_ID),
+      GITHUB_CLIENT_SECRET: JSON.stringify(process.env.GITHUB_CLIENT_SECRET)
     })
   ],
   module: {
