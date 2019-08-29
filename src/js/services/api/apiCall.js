@@ -1,23 +1,26 @@
 const timeoutDuration = 5000;
 
-export default function apiCall(route, body = {}, method = "GET") {
+export default function apiCall(
+  route,
+  client_id,
+  client_secret,
+  body = {},
+  method = "GET"
+) {
   // request promise
   const request = new Promise((resolve, reject) => {
-    // create a header with content type
+    // create header
     const headers = new Headers({
       "Content-Type": "application/json"
     });
-    // create the requestDetails object
+    // create requestDetails object
     const requestDetails = {
       method,
       mode: "cors",
       headers
     };
 
-    // Check to see if request is not a GET request
-    if (method !== "GET") requestDetails.body = JSON.stringify(body);
-
-    // handle errors function
+    // handle errors
     function handleErrors(response) {
       if (response.ok) {
         return response.json();
@@ -26,8 +29,10 @@ export default function apiCall(route, body = {}, method = "GET") {
       }
     }
 
-    // Construct fetch request
-    fetch(`${URL}/${route}`, requestDetails)
+    // construct fetch request
+    fetch(
+      `${URL}/${route}?client_id=${client_id}&client_secret=${client_secret}`
+    )
       .then(handleErrors)
       .then(resolve)
       .catch(reject);
