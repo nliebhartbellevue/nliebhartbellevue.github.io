@@ -18,7 +18,8 @@ module.exports = merge(common, {
     new Webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(process.env.NODE_ENV),
       GITHUB_CLIENT_ID: JSON.stringify(process.env.GITHUB_CLIENT_ID),
-      GITHUB_CLIENT_SECRET: JSON.stringify(process.env.GITHUB_CLIENT_SECRET)
+      GITHUB_CLIENT_SECRET: JSON.stringify(process.env.GITHUB_CLIENT_SECRET),
+      URL: JSON.stringify(process.env.URL)
     }),
     new Webpack.optimize.ModuleConcatenationPlugin(),
     new MiniCssExtractPlugin({

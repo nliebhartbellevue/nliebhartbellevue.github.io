@@ -8,7 +8,7 @@ module.exports = merge(common, {
   mode: "development",
   devtool: "cheap-eval-source-map",
   output: {
-    chunkFilename: "js/[name].chunk.js"
+    chunkFilename: "[name].chunk.js"
   },
   devServer: {
     inline: true
@@ -17,7 +17,8 @@ module.exports = merge(common, {
     new Webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(process.env.NODE_ENV),
       GITHUB_CLIENT_ID: JSON.stringify(process.env.GITHUB_CLIENT_ID),
-      GITHUB_CLIENT_SECRET: JSON.stringify(process.env.GITHUB_CLIENT_SECRET)
+      GITHUB_CLIENT_SECRET: JSON.stringify(process.env.GITHUB_CLIENT_SECRET),
+      URL: JSON.stringify(process.env.URL)
     })
   ],
   module: {
