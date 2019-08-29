@@ -1,0 +1,20 @@
+.skills-container {
+	display: grid;
+	grid-template-areas: 'icon pg pg pg pg pg';
+	grid-gap: 1.2rem;
+	margin-bottom: 5rem;
+}
+
+.skills-icon {
+	grid-area: icon;
+	position: absolute;
+
+	i {
+		position: relative;
+		bottom: 1rem;
+	}
+}
+
+.skills-progress {
+	grid-area: pg;
+}

@@ -1,25 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Dosis"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="css/main.css" /> -->
-    <title>Nathaniel Liebhart | Web Designer & Developer</title>
-  </head>
-  <body>
-    <div id="profile"></div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Dosis"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/index.css" />
+		<title>Nathaniel Liebhart | Web Designer & Developer</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header id="header-home">
+			<div class="container">
+				<nav class="sticky" id="main-nav">
+					<img src="src/assets/img/logo.png" alt="My Portfolio" id="logo" />
+					<ul>
+						<li><a href="#" class="current">Home</a></li>
+						<li><a href="#home-a">About</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="header-content">
+					<h1>
+						I Am Nate A
+						<span
+							class="txt-type"
+							data-wait="3000"
+							data-words='["Developer", "Designer", "Thinker"]'
+						></span>
+					</h1>
+					<p class="lead">
+						Welcome to my Portfolio!
+					</p>
+					<a href="#work" class="btn-light">View My Work</a>
+				</div>
+			</div>
+		</header>
 
-    <script src="./dist/index.js"></script>
-  </body>
+		<!-- Section A: Specialize -->
+		<section id="home-a" class="text-center py-2">
+			<div class="container">
+				<h2 class="section-title">About Nate</h2>
+				<div class="bottom-line"></div>
+				<p class="lead">
+					What I do best & What I love to do.
+				</p>
+				<div class="specials">
+					<div>
+						<i class="fas fa-file-code fa-2x"></i>
+						<h3>Developing</h3>
+						<p>
+							Weather for school or work, some of the best parts of my day are
+							spent in VS Code. Being able to create applications, that can
+							reach the ends of the earth gives me a euphoric feeling, each and
+							every time.
+						</p>
+					</div>
+					<div>
+						<i class="fas fa-desktop fa-2x"></i>
+						<h3>UI/UX</h3>
+						<p>
+							UI/UX design involves planning and iterating a
+							site's/application's structure and layout. Once proper information
+							is gathered, and the architecture is in place, I design the visual
+							layer to create a beautiful user experience.
+						</p>
+					</div>
+					<div>
+						<i class="fas fa-object-ungroup fa-2x"></i>
+						<h3>Visual Design</h3>
+						<p>
+							While most of my attention is on interactive projects, I do
+							branding and marketing from time to time. This includes logo
+							design, business cards, email and social media marketing and other
+							printed materials.
+						</p>
+					</div>
+					<div>
+						<i class="fas fa-baseball-ball fa-2x"></i>
+						<h3>Softball</h3>
+						<p>
+							All work and no play, makes for a boring life. I enjoy playing
+							softball from the start of May til the end of October. My wife is
+							definitely ready for the season to be over come September.
+						</p>
+					</div>
+				</div>
+				<div id="profile"></div>
+			</div>
+		</section>
+
+		<!-- Section B: Stats -->
+		<section id="home-b" class="text-center py-2">
+			<div class="stats">
+				<div>
+					<ul>
+						<li><i class="fas fa-star fa-3x"></i></li>
+						<li class="stats-title">Stars</li>
+						<li class="stats-number">100</li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li><i class="fas fa-project-diagram fa-3x"></i></li>
+						<li class="stats-title">Pull Requests</li>
+						<li class="stats-number">3</li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li><i class="fas fa-history fa-3x"></i></li>
+						<li class="stats-title">Commits</li>
+						<li class="stats-number">3500</li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li><i class="fas fa-code-branch fa-3x"></i></li>
+						<li class="stats-title">Repositories</li>
+						<li class="stats-number">135</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section C: Process -->
+		<section id="home-c" class="text-center py-2">
+			<div class="container">
+				<h2 class="section-title">
+					My Creative Process
+				</h2>
+				<div class="bottom-line"></div>
+				<p class="lead">
+					All of my development, UI/UX and design projects are based off of a
+					practiced formula to get the result that I am looking for.
+				</p>
+				<div class="process">
+					<div>
+						<i class="fas fa-file-alt fa-4x process-icon my-2">
+							<div class="process-step">1</div>
+						</i>
+						<h3>Discuss The Project</h3>
+						<p>
+							To get a clear picture of what you need I start every project by
+							receiving an initial brief of what you want. Having this gives me
+							enough context to properly provide you with a proposal and
+							ultimately tailor my services to your project goals.
+						</p>
+					</div>
+					<div>
+						<i class="fas fa-magic fa-4x process-icon my-2">
+							<div class="process-step">2</div>
+						</i>
+						<h3>Prototype & Design</h3>
+						<p>
+							Having a good set of wireframes and prototypes is the bedrock of
+							any successful project. This also allows me to better understand
+							your vision while always making sure your users are the primary
+							focus. Next, I turn concept into design, by giving you a modern
+							and clean working layout.
+						</p>
+					</div>
+					<div>
+						<i class="fas fa-code fa-4x process-icon my-2">
+							<div class="process-step">3</div>
+						</i>
+						<h3>Development</h3>
+						<p>
+							When the coding begins there will generally be less communication
+							from me as this is quite an involved process that doesn't require
+							much feedback. This is where I take the visuals of your project
+							and make them into something real that your users will love.
+						</p>
+					</div>
+					<div>
+						<i class="fas fa-rocket fa-4x process-icon my-2">
+							<div class="process-step">4</div>
+						</i>
+						<h3>Training & Launch</h3>
+						<p>
+							After the website has been coded but before it goes live I like to
+							provide in-depth training. When it's time to launch the new
+							site/application I'll take care of everything. All you'll need to
+							do is prepare the champaign for the party!
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills -->
+		<section id="about-b" class="bg-dark py-3">
+			<div class="container">
+				<h2 class="section-title">My Skills</h2>
+				<div class="bottom-line"></div>
+				<br />
+				<div class="skills-container">
+					<!-- html5 -->
+					<div class="skills-icon">
+						<i class="fab fa-html5 fa-4x tooltip">
+							<span class="tooltiptext">
+								5 + Years<br>
+								of HTML5<br>
+								Experience
+							</span>
+						</i>
+					</div>
+					<div class="skills-progress">
+						<div class="progress">
+							<div style="width: 100%;"></div>	
+						</div>
+					</div>
+				</div>
+				<div class="skills-container">
+					<!-- css3 -->
+					<div class="skills-icon">
+						<i class="fab fa-css3 fa-4x tooltip">
+							<span class="tooltiptext">
+								5 + Years<br>
+								of CSS3<br>
+								Experience
+							</span>
+						</i>
+					</div>
+					<div class="skills-progress">
+						<div class="progress">
+							<div style="width: 100%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="skills-container">
+					<!-- js -->
+					<div class="skills-icon">
+						<i class="fab fa-js-square fa-4x tooltip">
+							<span class="tooltiptext">
+								4 Years of<br>
+								JavaScript<br>
+								Experience
+							</span>
+						</i>
+					</div>
+					<div class="skills-progress">
+						<div class="progress">
+							<div style="width: 80%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="skills-container">
+					<!-- php -->
+					<div class="skills-icon">
+						<i class="fab fa-php fa-4x tooltip">
+							<span class="tooltiptext">
+								3.5 Years<br>
+								of PHP<br>
+								Experience
+							</span>
+						</i>
+					</div>
+					<div class="skills-progress">
+						<div class="progress">
+							<div style="width: 70%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="skills-container">
+					<!-- adobe -->
+					<div class="skills-icon">
+						<i class="fab fa-adobe fa-4x tooltip">
+							<span class="tooltiptext">
+								3 Years of<br>
+								Adobe CC<br>
+								Experience
+							</span>
+						</i>
+					</div>
+					<div class="skills-progress">
+						<div class="progress">
+							<div style="width: 60%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="skills-container">
+					<!-- python -->
+					<div class="skills-icon">
+						<i class="fab fa-python fa-4x tooltip">
+							<span class="tooltiptext">
+								2 Years of<br>
+								Python<br>
+								Experience
+							</span>
+						</i>
+					</div>
+					<div class="skills-progress">
+						<div class="progress">
+							<div style="width: 40%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Work Section -->
+		<section id="work-a" class="text-center py-3">
+			<div class="container">
+				<h2 class="section-title">My Recent Work</h2>
+				<div class="bottom-line"></div>
+				<p class="lead">
+					Check out my recent course work at Bellevue University
+				</p>
+				<div class="items">
+					<div class="item">
+						<div class="img-item">
+							<img src="src/assets/img/items/bioSite.png" alt="Bio Site Repo">
+						</div>
+						<div class="item-text">
+							<div class="item-text-wrap">
+								<p class="item-text-category">WEB 200</p>
+								<h2 class="item-text-title">Bio Site</h2>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img-item">
+							<img src="src/assets/img/items/bioSite.png" alt="Bio Site Repo">
+						</div>
+						<div class="item-text">
+							<div class="item-text-wrap">
+								<p class="item-text-category">WEB 200</p>
+								<h2 class="item-text-title">Bio Site</h2>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img-item">
+							<img src="src/assets/img/items/bioSite.png" alt="Bio Site Repo">
+						</div>
+						<div class="item-text">
+							<div class="item-text-wrap">
+								<p class="item-text-category">WEB 200</p>
+								<h2 class="item-text-title">Bio Site</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer id="main-footer">
+			<div class="footer-content container">
+				<p>Copyright &copy; 2019. All Rights Reserved</p>
+				<div class="social">
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin"></i>
+				</div>
+			</div>
+		</footer>
+
+    <script src="src/js/github.js"></script>
+    <script src="src/js/typewriter.js"></script>
+    <script src="src/js/navbar.js"></script>
+    <script src="src/js/index.js"></script>
+	</body>
 </html>

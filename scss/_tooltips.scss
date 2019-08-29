@@ -1,0 +1,44 @@
+// Tooltip container
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  // Tooltip text
+  .tooltiptext {
+    visibility: hidden;
+    width: 5.2em;
+    font-size: 2rem;
+    background-color: $light-color;
+    color: $dark-color;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    // Position the tooltip text
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    // Fade in tooltip
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    // Tooltip arrow
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $light-color transparent transparent transparent;
+    }
+  }
+
+  // Show the tooltip on hover of the tooltip container
+  &:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+}
