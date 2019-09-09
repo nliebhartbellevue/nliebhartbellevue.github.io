@@ -1,350 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nathaniel Liebhart | Web Designer & Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header id="header-home">
+      <div class="container">
+        <nav
+          id="mainNavbar"
+          class="navbar navbar-dark navbar-expand-md py-0 fixed-top"
+        >
+          <a href="#" class="navbar-brand">
+            <img class="img-fluid" src="assets/img/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navLinks"
+            aria-label="Toggle Navigation"
+          >
+            <div class="hamburger-container" onclick="hamburgerFunc(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="#home-a" class="nav-link">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a href="#home-c" class="nav-link">WORK</a>
+              </li>
+              <li class="nav-item">
+                <a href="#main-footer" class="nav-link">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div id="home" class="header-content">
+          <h1>
+            I Am Nate A
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["Developer", "Designer", "Thinker"]'
+            >
+            </span>
+          </h1>
+          <p class="lead">
+            Welcome to my Portfolio!
+          </p>
+        </div>
+      </div>
+    </header>
 
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-			crossorigin="anonymous"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Dosis"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./css/index.css" />
+    <!-- Section A: About -->
+    <section id="home-a" class="text-center pyx-2">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          What I do best & What I love to do.
+        </p>
+        <div class="card-deck">
+          <div class="card bg-light">
+            <div class="card-body text-center text-dark">
+              <i class="fas fa-file-code fa-2x"></i>
+              <h3>Developing</h3>
+              <p>
+                Weather for school or work, some of the best parts of my day are
+                spent in VS Code. Being able to create applications, that can
+                reach the ends of the earth gives me a euphoric feeling, each
+                and every time.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-light">
+            <div class="card-body text-center text-dark">
+              <i class="fas fa-desktop fa-2x"></i>
+              <h3>UI/UX</h3>
+              <p>
+                UI/UX design involves planning and iterating a
+                site's/application's structure and layout. Once proper
+                information is gathered, and the architecture is in place, I
+                design the visual layer to create a beautiful user experience.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-light">
+            <div class="card-body text-center text-dark">
+              <i class="fas fa-object-ungroup fa-2x"></i>
+              <h3>Visual Design</h3>
+              <p>
+                While most of my attention is on interactive projects, I do
+                branding and marketing from time to time. This includes logo
+                design, business cards, email and social media marketing and
+                other printed materials.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-light">
+            <div class="card-body text-center text-dark">
+              <i class="fas fa-baseball-ball fa-2x"></i>
+              <h3>Softball</h3>
+              <p>
+                All work and no play, makes for a boring life. I enjoy playing
+                softball from the start of May til the end of October. My wife
+                is definitely ready for the season to be over come September.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<style>
-			html {
-				scroll-behavior: smooth;
-			}
-		</style>
+    <!-- Section A+: Slideshow -->
+    <section id="home-a1" class="text-center">
+      <div class="slide-container container">
+        <!-- Slides -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img
+            src="assets/img/slideshow/cat-wide.jpg"
+            alt="Cat standing"
+            style="width: 100%;"
+          />
+        </div>
 
-		<title>Nathaniel Liebhart | Web Designer & Developer</title>
-	</head>
-	<body>
-		<!-- Header -->
-		<header id="header-home">
-			<div class="container">
-				<nav class="sticky" id="main-nav">
-					<img src="assets/img/logo.png" alt="My Portfolio" id="logo" />
-					<ul>
-						<li><a href="#" class="current">Home</a></li>
-						<li><a href="#home-a">About</a></li>
-						<li><a href="#work-a">Work</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-				<div class="header-content">
-					<h1>
-						I Am Nate A
-						<span
-							class="txt-type"
-							data-wait="3000"
-							data-words='["Developer", "Designer", "Thinker"]'
-						></span>
-					</h1>
-					<p class="lead">
-						Welcome to my Portfolio!
-					</p>
-				</div>
-			</div>
-		</header>
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img
+            src="assets/img/slideshow/christmas-wide.JPG"
+            alt="Christmas picture"
+            style="width: 80%;"
+          />
+        </div>
 
-		<!-- Section A: Specialize -->
-		<section id="home-a" class="text-center py-2">
-			<div class="container">
-				<h2 class="section-title">About Nate</h2>
-				<div class="bottom-line"></div>
-				<p class="lead">
-					What I do best & What I love to do.
-				</p>
-				<div class="specials">
-					<div>
-						<i class="fas fa-file-code fa-2x"></i>
-						<h3>Developing</h3>
-						<p>
-							Weather for school or work, some of the best parts of my day are
-							spent in VS Code. Being able to create applications, that can
-							reach the ends of the earth gives me a euphoric feeling, each and
-							every time.
-						</p>
-					</div>
-					<div>
-						<i class="fas fa-desktop fa-2x"></i>
-						<h3>UI/UX</h3>
-						<p>
-							UI/UX design involves planning and iterating a
-							site's/application's structure and layout. Once proper information
-							is gathered, and the architecture is in place, I design the visual
-							layer to create a beautiful user experience.
-						</p>
-					</div>
-					<div>
-						<i class="fas fa-object-ungroup fa-2x"></i>
-						<h3>Visual Design</h3>
-						<p>
-							While most of my attention is on interactive projects, I do
-							branding and marketing from time to time. This includes logo
-							design, business cards, email and social media marketing and other
-							printed materials.
-						</p>
-					</div>
-					<div>
-						<i class="fas fa-baseball-ball fa-2x"></i>
-						<h3>Softball</h3>
-						<p>
-							All work and no play, makes for a boring life. I enjoy playing
-							softball from the start of May til the end of October. My wife is
-							definitely ready for the season to be over come September.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img
+            src="assets/img/slideshow/lddlogo-wide.jpg"
+            alt="Liebhart Design & Development logo"
+            style=" width: 100%;"
+          />
+        </div>
 
-		<!-- Section B: Stats -->
-		<section id="home-b" class="text-center py-2">
-			<div class="stats">
-				<div>
-					<ul>
-						<li><i class="fas fa-star fa-3x"></i></li>
-						<li class="stats-title">Stars</li>
-						<li id="stars" class="stats-number">10</li>
-					</ul>
-				</div>
-				<div>
-					<ul>
-						<li><i class="fas fa-user-friends fa-3x"></i></li>
-						<li class="stats-title">Followers</li>
-						<li id="followers" class="stats-number"></li>
-					</ul>
-				</div>
-				<div>
-					<ul>
-						<li><i class="fas fa-users fa-3x"></i></li>
-						<li class="stats-title">Following</li>
-						<li id="following" class="stats-number"></li>
-					</ul>
-				</div>
-				<div>
-					<ul>
-						<li><i class="fas fa-code-branch fa-3x"></i></li>
-						<li class="stats-title">Repositories</li>
-						<li id="repo_count" class="stats-number"></li>
-					</ul>
-				</div>
-			</div>
-		</section>
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img
+            src="assets/img/slideshow/softball-wide.jpg"
+            alt="Softball picture"
+            style=" width: 100%;"
+          />
+        </div>
 
-		<!-- Section C: Process -->
-		<section id="home-c" class="text-center py-2">
-			<div class="container">
-				<h2 class="section-title">
-					My Creative Process
-				</h2>
-				<div class="bottom-line"></div>
-				<p class="lead">
-					All of my development, UI/UX and design projects are based off of a
-					practiced formula to get the result that I am looking for.
-				</p>
-				<div class="process">
-					<div>
-						<i class="fas fa-file-alt fa-4x process-icon my-2">
-							<div class="process-step">1</div>
-						</i>
-						<h3>Discuss The Project</h3>
-						<p>
-							To get a clear picture of what you need I start every project by
-							receiving an initial brief of what you want. Having this gives me
-							enough context to properly provide you with a proposal and
-							ultimately tailor my services to your project goals.
-						</p>
-					</div>
-					<div>
-						<i class="fas fa-magic fa-4x process-icon my-2">
-							<div class="process-step">2</div>
-						</i>
-						<h3>Prototype & Design</h3>
-						<p>
-							Having a good set of wireframes and prototypes is the bedrock of
-							any successful project. This also allows me to better understand
-							your vision while always making sure your users are the primary
-							focus. Next, I turn concept into design, by giving you a modern
-							and clean working layout.
-						</p>
-					</div>
-					<div>
-						<i class="fas fa-code fa-4x process-icon my-2">
-							<div class="process-step">3</div>
-						</i>
-						<h3>Development</h3>
-						<p>
-							When the coding begins there will generally be less communication
-							from me as this is quite an involved process that doesn't require
-							much feedback. This is where I take the visuals of your project
-							and make them into something real that your users will love.
-						</p>
-					</div>
-					<div>
-						<i class="fas fa-rocket fa-4x process-icon my-2">
-							<div class="process-step">4</div>
-						</i>
-						<h3>Training & Launch</h3>
-						<p>
-							After the website has been coded but before it goes live I like to
-							provide in-depth training. When it's time to launch the new
-							site/application I'll take care of everything. All you'll need to
-							do is prepare the champaign for the party!
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img
+            src="assets/img/slideshow/pokemon-wide.jpg"
+            alt="Pokemon Go Time"
+            style=" width: 100%;"
+          />
+        </div>
 
-		<!-- Skills -->
-		<section style="margin-top:1.5rem;" id="about-b" class="bg-dark py-3">
-			<div class="container">
-				<h2 style="margin: 1.5rem;" class="section-title">My Skills</h2>
-				<div style="margin-bottom: 1.5rem;" class="bottom-line"></div>
-				<br />
-				<div class="skills-container">
-					<!-- html5 -->
-					<div class="skills-icon">
-						<i class="fab fa-html5 fa-4x tooltip">
-							<span class="tooltiptext">
-								5 + Years<br />
-								of HTML5<br />
-								Experience
-							</span>
-						</i>
-					</div>
-					<div class="skills-progress">
-						<div class="progress">
-							<div style="width: 100%;"></div>
-						</div>
-					</div>
-				</div>
-				<div class="skills-container">
-					<!-- css3 -->
-					<div class="skills-icon">
-						<i class="fab fa-css3 fa-4x tooltip">
-							<span class="tooltiptext">
-								5 + Years<br />
-								of CSS3<br />
-								Experience
-							</span>
-						</i>
-					</div>
-					<div class="skills-progress">
-						<div class="progress">
-							<div style="width: 100%;"></div>
-						</div>
-					</div>
-				</div>
-				<div class="skills-container">
-					<!-- js -->
-					<div class="skills-icon">
-						<i class="fab fa-js-square fa-4x tooltip">
-							<span class="tooltiptext">
-								4 Years of<br />
-								JavaScript<br />
-								Experience
-							</span>
-						</i>
-					</div>
-					<div class="skills-progress">
-						<div class="progress">
-							<div style="width: 80%;"></div>
-						</div>
-					</div>
-				</div>
-				<div class="skills-container">
-					<!-- php -->
-					<div class="skills-icon">
-						<i class="fab fa-php fa-4x tooltip">
-							<span class="tooltiptext">
-								3.5 Years<br />
-								of PHP<br />
-								Experience
-							</span>
-						</i>
-					</div>
-					<div class="skills-progress">
-						<div class="progress">
-							<div style="width: 70%;"></div>
-						</div>
-					</div>
-				</div>
-				<div class="skills-container">
-					<!-- adobe -->
-					<div class="skills-icon">
-						<i class="fab fa-adobe fa-4x tooltip">
-							<span class="tooltiptext">
-								3 Years of<br />
-								Adobe CC<br />
-								Experience
-							</span>
-						</i>
-					</div>
-					<div class="skills-progress">
-						<div class="progress">
-							<div style="width: 60%;"></div>
-						</div>
-					</div>
-				</div>
-				<div class="skills-container">
-					<!-- python -->
-					<div class="skills-icon">
-						<i class="fab fa-python fa-4x tooltip">
-							<span class="tooltiptext">
-								2 Years of<br />
-								Python<br />
-								Experience
-							</span>
-						</i>
-					</div>
-					<div class="skills-progress">
-						<div class="progress">
-							<div style="width: 40%;"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img
+            src="assets/img/slideshow/wedding-wide.jpg"
+            alt="Wedding picture"
+            style=" width: 100%;"
+          />
+        </div>
 
-		<!-- Work Section -->
-		<section style="padding: 2rem;" id="work-a" class="text-center py-3">
-			<div class="container">
-				<h2 class="section-title">My Recent Work</h2>
-				<div class="bottom-line"></div>
-				<p class="lead">
-					Check out my recent course work at Bellevue University
-				</p>
-				<div id="repos" class="items"></div>
-			</div>
-		</section>
+        <!-- Next and previous buttons -->
+        <a
+          onclick="plusSlides(-1)"
+          class="prev"
+          style="left: 0;margin-left: 25px;"
+          >&#10094;</a
+        >
+        <a onclick="plusSlides(1)" class="next" style="margin-right: 25px;"
+          >&#10095;</a
+        >
 
-		<!-- Footer -->
-		<footer id="main-footer">
-			<div id="contact" class="footer-content container">
-				<p>Copyright &copy; 2019. All Rights Reserved</p>
-				<div class="social">
-					<i class="fab fa-twitter"></i>
-					<i class="fab fa-facebook"></i>
-					<i class="fab fa-instagram"></i>
-					<i class="fab fa-linkedin"></i>
-				</div>
-			</div>
-		</footer>
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
 
-		<script src="js/github.js"></script>
-		<script src="js/ui.js"></script>
-		<script src="js/typewriter.js"></script>
-		<script src="js/navbar.js"></script>
-		<script src="js/index.js"></script>
-	</body>
+        <!-- Thumbnail images -->
+        <div class="rowSm">
+          <div class="column">
+            <img
+              src="assets/img/slideshow/cat.jpg"
+              class="demo cursor"
+              style="width: 100%;"
+              onclick="currentSlide(1)"
+              alt="A Standing Cat"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="assets/img/slideshow/christmas.JPG"
+              class="demo cursor"
+              style="width: 100%;"
+              onclick="currentSlide(2)"
+              alt="Christmas in South Dakota"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="assets/img/slideshow/lddlogo.jpg"
+              class="demo cursor"
+              style="width: 100%;"
+              onclick="currentSlide(3)"
+              alt="A concept for my company's logo"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="assets/img/slideshow/softball.jpeg"
+              class="demo cursor"
+              style="width: 100%;"
+              onclick="currentSlide(4)"
+              alt="My wife and I's 2018 Summer softball team"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="assets/img/slideshow/pokemon.jpg"
+              class="demo cursor"
+              style="width: 100%;"
+              onclick="currentSlide(5)"
+              alt="My favorite mobile game Pokemon Go"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="assets/img/slideshow/wedding.jpeg"
+              class="demo cursor"
+              style="width: 100%;"
+              onclick="currentSlide(6)"
+              alt="Our Wedding Day"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B: Stats -->
+    <section id="home-b" class="text-center text-dark pyx-2">
+      <div class="stats row">
+        <div class="col-md-3">
+          <ul>
+            <li><i class="fas fa-star fa-3x"></i></li>
+            <li class="stats-title">Stars</li>
+            <li class="stats-number">10</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li><i class="fas fa-user-friends fa-3x"></i></li>
+            <li class="stats-title">Followers</li>
+            <li id="followers" class="stats-number"></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li><i class="fas fa-users fa-3x"></i></li>
+            <li class="stats-title">Following</li>
+            <li id="following" class="stats-number"></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li><i class="fas fa-code-branch fa-3x"></i></li>
+            <li class="stats-title">Repositories</li>
+            <li id="repo_count" class="stats-number"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: Process -->
+    <section id="home-c" class="text-center pyx-2">
+      <div class="container">
+        <h2 class="section-title">
+          My Creative Process
+        </h2>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          All of my development, UI/UX and design projects are based off of a
+          practiced formula to get the result that I am looking for.
+        </p>
+        <div class="process row">
+          <div class="col-md-3">
+            <i class="fas fa-file-alt fa-4x process-icon myx-2">
+              <div class="process-step">1</div>
+            </i>
+            <h3>Discuss The Project</h3>
+            <p>
+              To get a clear picture of what you need I start every project by
+              receiving an initial brief of what you want. Having this gives me
+              enough context to properly provide you with a proposal and
+              ultimately tailor my services to your project goals.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <i class="fas fa-magic fa-4x process-icon myx-2">
+              <div class="process-step">1</div>
+            </i>
+            <h3>Prototype & Design</h3>
+            <p>
+              Having a good set of wireframes and prototypes is the bedrock of
+              any successful project. This also allows me to better understand
+              your vision while always making sure your users are the primary
+              focus. Next, I turn concept into design, by giving you a modern
+              and clean working layout.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <i class="fas fa-code fa-4x process-icon myx-2">
+              <div class="process-step">1</div>
+            </i>
+            <h3>Development</h3>
+            <p>
+              When the coding begins there will generally be less communication
+              from me as this is quite an involved process that doesn't require
+              much feedback. This is where I take the visuals of your project
+              and make them into something real that your users will love.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <i class="fas fa-rocket fa-4x process-icon myx-2">
+              <div class="process-step">1</div>
+            </i>
+            <h3>Training & Launch</h3>
+            <p>
+              After the website has been coded but before it goes live I like to
+              provide in-depth training. When it's time to launch the new
+              site/application I'll take care of everything. All you'll need to
+              do is prepare the champaign for the party!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section about-b: Skills -->
+    <section id="about-b" class="bg-dark pyx-3">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="bottom-line"></div>
+        <br />
+        <div class="skills-container row">
+          <!-- html5 -->
+          <div class="col-md-12 align-middle">
+            <div class="skills-icon">
+              <i class="fab fa-html5 fa-4x"></i>
+            </div>
+            <div class="skills-progress">
+              <div class="progress">
+                <div style="width: 100%;font-size: 1rem;">
+                  5 + Years Experience
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-container row">
+          <!-- css3 -->
+          <div class="col-md-12 align-middle">
+            <div class="skills-icon">
+              <i class="fab fa-css3 fa-4x"></i>
+            </div>
+            <div class="skills-progress">
+              <div class="progress">
+                <div style="width: 100%;font-size: 1rem;">
+                  5 + Years Experience
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-container row">
+          <!-- js -->
+          <div class="col-md-12 align-middle">
+            <div class="skills-icon">
+              <i class="fab fa-js-square fa-4x"></i>
+            </div>
+            <div class="skills-progress">
+              <div class="progress">
+                <div style="width: 80%;font-size: 1rem;">
+                  4 Years Experience
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-container row">
+          <!-- php -->
+          <div class="col-md-12 align-middle">
+            <div class="skills-icon">
+              <i class="fab fa-php fa-4x"></i>
+            </div>
+            <div class="skills-progress">
+              <div class="progress">
+                <div style="width: 70%;font-size: 1rem;">
+                  3.5 Years Experience
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-container row">
+          <!-- adobe -->
+          <div class="col-md-12 align-middle">
+            <div class="skills-icon">
+              <i class="fab fa-adobe fa-4x"></i>
+            </div>
+            <div class="skills-progress">
+              <div class="progress">
+                <div style="width: 60%;font-size: 1rem;">
+                  3 Years Experience
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-container row">
+          <!-- python -->
+          <div class="col-md-12 align-middle">
+            <div class="skills-icon">
+              <i class="fab fa-python fa-4x"></i>
+            </div>
+            <div class="skills-progress">
+              <div class="progress">
+                <div style="width: 40%;font-size: 1rem;">
+                  2 Years Experience
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work-a" class="text-center pyx-3">
+      <div class="container">
+        <h2 class="section-title">My Recent Work</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          Check out my recent course work at Bellevue University
+        </p>
+        <div id="repos" class="items row"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div id="contact" class="footer-content container">
+        <p style="padding-top: 15px;">
+          Copyright &copy; 2019. All Rights Reserved
+        </p>
+        <br />
+        <p style="margin-top: 15px;">
+          Nathaniel Liebhart | nliebhart@my365.bellevue.edu
+        </p>
+        <div class="social">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // navbar scroll function
+      $(() => {
+        $(document).scroll(() => {
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+    <script>
+      function hamburgerFunc(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+    <script src="js/typewriter.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/github.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
