@@ -48,6 +48,22 @@ body {
   margin: 4rem 0;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu:hover {
+  background: #7b82f0;
+}
+
+.dropdown-menu a:hover {
+  background: #312567;
+  color: #46fff4;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -481,4 +497,12 @@ body {
 
 #main-footer .footer-content .social .fab:hover {
   background: #7b82f0;
+}
+
+/* Style video section */
+#video-section {
+  background: #312567;
+}
+#video-section video {
+  padding: 80px;
 }
