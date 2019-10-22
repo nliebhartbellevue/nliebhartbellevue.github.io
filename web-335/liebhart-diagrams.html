@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="../css/custom.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="./lightbox.css" />
   </head>
   <body>
     <div class="container">
@@ -74,15 +75,24 @@
         </div>
       </nav>
     </div>
-    <section id="video-section">
-      <div class="container">
-        <!-- WEB 420 Presentation 1.3 - REST -->
-        <div class="embed-responsive embed-responsive-16by9">
-          <video
-            controls
-            src="../restful-api-presentations/week-one/REST.mp4"
-            class="embed-responsive-item"
-          ></video>
+
+    <section id="section-gallery">
+      <div class="img-comp-container">
+        <div class="img-comp-img">
+          <img
+            src="../nosql-data-diagrams/user-ORD-Data-model.PNG"
+            alt="User ORD"
+            width="300"
+            height="200"
+          />
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+          <img
+            src="../nosql-data-diagrams/user-NoSQL-data-model.PNG"
+            alt="User NoSQL"
+            width="300"
+            height="200"
+          />
         </div>
       </div>
     </section>
@@ -136,21 +146,7 @@
         x.classList.toggle("change");
       }
     </script>
-    <script>
-      // get the video
-      const video = document.getElementById("myVideo");
-      // get button
-      const btn = document.getElementById("ppBtn");
-      // pause/play the video, and change the button text
-      function playFunc() {
-        if (video.paused) {
-          video.play();
-          btn.innerHTML = "Pause";
-        } else {
-          video.pause();
-          btn.innerHTML = "Play";
-        }
-      }
+    
     </script>
   </body>
 </html>
