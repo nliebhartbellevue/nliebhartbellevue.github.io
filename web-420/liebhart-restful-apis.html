@@ -65,14 +65,10 @@
                 PRESENTATIONS
               </a>
               <div class="dropdown-menu">
-                <a href="./web-420/liebhart-rest.html" class="dropdown-item"
+                <a href="../web-420/liebhart-rest.html" class="dropdown-item"
                   >Rest | Week 1</a
                 >
-                <a
-                  href="./web-420/liebhart-restful-apis.html"
-                  class="dropdown-item"
-                  >Restful APIs | Week 2</a
-                >
+                <a href="#" class="dropdown-item">Restful APIs | Week 2</a>
               </div>
             </li>
           </ul>
@@ -131,29 +127,29 @@
       // navbar scroll function
       $(() => {
         $(document).scroll(() => {
-          var $nav = $("#mainNavbar");
-          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+          var $nav = $('#mainNavbar');
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         });
       });
     </script>
     <script>
       function hamburgerFunc(x) {
-        x.classList.toggle("change");
+        x.classList.toggle('change');
       }
     </script>
     <script>
       // get the video
-      const video = document.getElementById("myVideo");
+      const video = document.getElementById('myVideo');
       // get button
-      const btn = document.getElementById("ppBtn");
+      const btn = document.getElementById('ppBtn');
       // pause/play the video, and change the button text
       function playFunc() {
         if (video.paused) {
           video.play();
-          btn.innerHTML = "Pause";
+          btn.innerHTML = 'Pause';
         } else {
           video.pause();
-          btn.innerHTML = "Play";
+          btn.innerHTML = 'Play';
         }
       }
     </script>

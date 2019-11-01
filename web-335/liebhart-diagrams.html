@@ -66,8 +66,13 @@
                 PRESENTATIONS
               </a>
               <div class="dropdown-menu">
-                <a href="./web-420/liebhart-rest.html" class="dropdown-item"
+                <a href="../web-420/liebhart-rest.html" class="dropdown-item"
                   >Rest | Week 1</a
+                >
+                <a
+                  href="../web-420/liebhart-restful-apis.html"
+                  class="dropdown-item"
+                  >Restful APIs | Week 2</a
                 >
               </div>
             </li>
@@ -76,62 +81,76 @@
       </nav>
     </div>
 
-    <section id="section-gallery">
-      <div class="img-comp-container">
-        <div class="img-comp-img">
-          <img
-            src="../nosql-data-diagrams/user-ORD-Data-model.PNG"
-            alt="User ORD"
-            width="300"
-            height="200"
-          />
+    <header>
+      <div class="lb-container">
+        <!-- Images used to open the lightbox -->
+        <div class="lb-row">
+          <div class="lb-column lb-col-2">
+            <img
+              style="height: 500px;width:500px;"
+              src="../nosql-data-diagrams/user-ORD-Data-model.PNG"
+              alt="User ORD data model"
+            />
+          </div>
+          <div class="lb-column lb-col-2">
+            <img
+              style="height: 500px;width:500px;"
+              src="../nosql-data-diagrams/user-NoSQL-data-model.PNG"
+              alt="User NoSQL data"
+            />
+          </div>
         </div>
-        <div class="img-comp-img img-comp-overlay">
-          <img
-            src="../nosql-data-diagrams/user-NoSQL-data-model.PNG"
-            alt="User NoSQL"
-            width="300"
-            height="200"
-          />
+        <div id="week1-modal" class="lb-modal">
+          <span class="lb-close lb-cursor" onclick="closeModal()">&times;</span>
+          <div class="lb-modal-content">
+            <div class="lbSlides">
+              <div class="lb-numbertext">1 / 2</div>
+              <img
+                src="../nosql-data-diagrams/user-ORD-Data-model.PNG"
+                alt="User ORD data model"
+                style="width: 100%;"
+              />
+            </div>
+            <div class="lbSlides">
+              <div class="lb-numbertext">2 / 2</div>
+              <img
+                src="../nosql-data-diagrams/user-NoSQL-data-model.PNG"
+                alt="User NoSQL data model"
+                style="width: 100%;"
+              />
+            </div>
+            <!-- Next/previous controls -->
+            <a onclick="plusSlides(-1)" class="lb-prev">&#10094;</a>
+            <a onclick="plusSlides(1)" class="lb-next">&#10095;</a>
+
+            <!-- Caption Text -->
+            <div class="lb-caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="lb-column lb-col-2">
+              <img
+                src="../nosql-data-diagrams/user-ORD-Data-model.PNG"
+                alt="Week 1 - WEB 335 User ORD Data Model"
+                class="demo"
+                style="height:200px;width:200px;"
+                onclick="currentSlide(1)"
+              />
+            </div>
+            <div class="lb-column lb-col-2">
+              <img
+                src="../nosql-data-diagrams/user-NoSQL-data-model.PNG"
+                alt="Week 1 - WEB 335 User NoSQL Data Model"
+                class="demo"
+                style="height:200px;width:200px;"
+                onclick="currentSlide(2)"
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <div class="img-comp-container">
-        <div class="img-comp-img">
-          <img
-            src="../nosql-data-diagrams/NodeShopper_ORD.png"
-            alt="User ORD"
-            width="300"
-            height="200"
-          />
-        </div>
-        <div class="img-comp-img img-comp-overlay">
-          <img
-            src="../nosql-data-diagrams/NodeShopper_NoSQL.png"
-            alt="User NoSQL"
-            width="300"
-            height="200"
-          />
-        </div>
-      </div>
-      <div class="img-comp-container">
-        <div class="img-comp-img">
-          <img
-            src="../nosql-data-diagrams/NodeTech_ORD.png"
-            alt="User ORD"
-            width="300"
-            height="200"
-          />
-        </div>
-        <div class="img-comp-img img-comp-overlay">
-          <img
-            src="../nosql-data-diagrams/NodeTech_NoSQL.png"
-            alt="User NoSQL"
-            width="300"
-            height="200"
-          />
-        </div>
-      </div>
-    </section>
+    </header>
 
     <!-- Footer -->
     <footer id="main-footer">
@@ -172,17 +191,17 @@
       // navbar scroll function
       $(() => {
         $(document).scroll(() => {
-          var $nav = $("#mainNavbar");
-          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+          var $nav = $('#mainNavbar');
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         });
       });
     </script>
     <script>
       function hamburgerFunc(x) {
-        x.classList.toggle("change");
+        x.classList.toggle('change');
       }
     </script>
-    
-    </script>
+
+    <script src="./lightbox.js"></script>
   </body>
 </html>
