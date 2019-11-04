@@ -17,7 +17,6 @@
     />
     <link rel="stylesheet" href="../css/custom.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="./lightbox.css" />
   </head>
   <body>
     <div class="container">
@@ -74,86 +73,25 @@
                   class="dropdown-item"
                   >Restful APIs | Week 2</a
                 >
-                <a href="../web-420/liebhart-soap.html" class="dropdown-item"
-                  >SOAP | Week 3</a
-                >
+                <a href="#" class="dropdown-item">SOAP | Week 3</a>
               </div>
             </li>
           </ul>
         </div>
       </nav>
     </div>
-
-    <header>
-      <div class="lb-container">
-        <!-- Images used to open the lightbox -->
-        <div class="lb-row">
-          <div class="lb-column lb-col-2">
-            <img
-              style="height: 500px;width:500px;"
-              src="../nosql-data-diagrams/user-ORD-Data-model.PNG"
-              alt="User ORD data model"
-            />
-          </div>
-          <div class="lb-column lb-col-2">
-            <img
-              style="height: 500px;width:500px;"
-              src="../nosql-data-diagrams/user-NoSQL-data-model.PNG"
-              alt="User NoSQL data"
-            />
-          </div>
-        </div>
-        <div id="week1-modal" class="lb-modal">
-          <span class="lb-close lb-cursor" onclick="closeModal()">&times;</span>
-          <div class="lb-modal-content">
-            <div class="lbSlides">
-              <div class="lb-numbertext">1 / 2</div>
-              <img
-                src="../nosql-data-diagrams/user-ORD-Data-model.PNG"
-                alt="User ORD data model"
-                style="width: 100%;"
-              />
-            </div>
-            <div class="lbSlides">
-              <div class="lb-numbertext">2 / 2</div>
-              <img
-                src="../nosql-data-diagrams/user-NoSQL-data-model.PNG"
-                alt="User NoSQL data model"
-                style="width: 100%;"
-              />
-            </div>
-            <!-- Next/previous controls -->
-            <a onclick="plusSlides(-1)" class="lb-prev">&#10094;</a>
-            <a onclick="plusSlides(1)" class="lb-next">&#10095;</a>
-
-            <!-- Caption Text -->
-            <div class="lb-caption-container">
-              <p id="caption"></p>
-            </div>
-
-            <!-- Thumbnail image controls -->
-            <div class="lb-column lb-col-2">
-              <img
-                src="../nosql-data-diagrams/user-ORD-Data-model.PNG"
-                alt="Week 1 - WEB 335 User ORD Data Model"
-                class="demo"
-                style="height:200px;width:200px;"
-                onclick="currentSlide(1)"
-              />
-            </div>
-            <div class="lb-column lb-col-2">
-              <img
-                src="../nosql-data-diagrams/user-NoSQL-data-model.PNG"
-                alt="Week 1 - WEB 335 User NoSQL Data Model"
-                class="demo"
-                style="height:200px;width:200px;"
-                onclick="currentSlide(2)"
-              />
-            </div>
-          </div>
+    <section id="video-section">
+      <div class="container">
+        <!-- WEB 420 Presentation 1.3 - REST -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <video
+            controls
+            src="../restful-api-presentations/week-three/SOAP.mp4"
+            class="embed-responsive-item"
+          ></video>
         </div>
       </div>
-    </header>
+    </section>
 
     <!-- Footer -->
     <footer id="main-footer">
@@ -204,7 +142,21 @@
         x.classList.toggle('change');
       }
     </script>
-
-    <script src="./lightbox.js"></script>
+    <script>
+      // get the video
+      const video = document.getElementById('myVideo');
+      // get button
+      const btn = document.getElementById('ppBtn');
+      // pause/play the video, and change the button text
+      function playFunc() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = 'Pause';
+        } else {
+          video.pause();
+          btn.innerHTML = 'Play';
+        }
+      }
+    </script>
   </body>
 </html>
