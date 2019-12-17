@@ -506,3 +506,11 @@ body {
 #video-section video {
   padding: 80px;
 }
+
+.process img {
+  max-width: 350px;
+}
+.process h3 {
+  color: #312567;
+  font-weight: bold;
+}
